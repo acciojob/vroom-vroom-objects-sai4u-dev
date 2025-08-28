@@ -10,19 +10,19 @@ Car.prototype.getMakeModel = function () {
   return `${this.make} ${this.model}`;
 };
 
-function SportCar(make, model, topSpeed) {
+function SportsCar(make, model, topSpeed) {
 	  this.make = make;
   this.model = model;
   this.topSpeed = topSpeed;
 }
 
-SportCar.prototype = Object.create(Car.prototype);
+SportsCar.prototype = Object.create(Car.prototype);
 
-SportCar.prototype.getTopSpeed = function () {
+SportsCar.prototype.getTopSpeed = function () {
   return this.topSpeed;
 };
 
-const car = new SportCar("Ferrari", "Testarossa", 200);
+const car = new SportsCar("Ferrari", "Testarossa", 200);
 console.log(car.getMakeModel());
 console.log(car.getTopSpeed());
 
