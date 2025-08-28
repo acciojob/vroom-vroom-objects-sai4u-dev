@@ -1,6 +1,6 @@
 // Complete the js code
 function Car(make, model) {
-	 if (typeof make == "string" || typeof model == "string") {
+	 if (typeof make == "string" && typeof model == "string") {
     console.log("Eroor");
   }
   this.make = make;
